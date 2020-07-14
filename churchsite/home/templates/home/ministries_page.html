@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!--
+<div class="row justify-content-center">
+  <div class="col-10" style="text-align: center;">
+    <h1 style="margin-top: 5%; margin-bottom: 2.5%;">Our Missions...</h1>
+  </div>
+</div>-->
+
+
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" style="margin-bottom: 10%;">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <div class="carousel-item active" style="background-image: url({% static 'vbs1.JPG' %})">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="display-4"><a href="{% url 'vbs' %}">V.B.S.</a></h2>
+              <p class="lead">Children's club in village.</p>
+            </div>
+          </div>
+  
+            <div class="carousel-item" style="background-image: url({% static 'seekers2.JPG' %})">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'seekers_meeting' %}">Seekers Meeting</a></h2>
+                  <p class="lead">Mini- Convention and Seekers Meeting in village area.</p>
+              </div>
+            </div>
+  
+    
+            <div class="carousel-item" style="background-image: url({% static 'literature1.JPG' %})">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'literature_ministry' %}">Literature Ministry</a></h2>
+                  <p class="lead">A Book Stall in an Exhibiton. Souls through Letters!</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url(https://via.placeholder.com/150x150.png?text=picture+here)">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'sunday_school' %}">Sunday School</a></h2>
+                  <p class="lead">Filler text goes here</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url({% static 'youth.JPG' %})">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'youth' %}">Youth Retreat</a></h2>
+                  <p class="lead">Youths are the cream and backbone of the society.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url({% static 'evangelism.JPG' %})">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'evangalism' %}">Evanglilism</a></h2>
+                  <p class="lead">How beautiful are the feets of those who bring goodnews (Romans 10: 14- 15) </p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url(https://via.placeholder.com/150x150.png?text=picture+here)">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'family_seminar' %}">Family Seminar</a></h2>
+                  <p class="lead">A Book Stall in an Exhibiton. Souls through Letters!</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url(https://via.placeholder.com/150x150.png?text=picture+here)">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'relief_work' %}">Relief Work</a></h2>
+                  <p class="lead">Filler text goes here</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" style="background-image: url({% static 'christmas.JPG' %})">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="display-4"><a href="{% url 'christmas' %}">Christmas</a></h2>
+                  <p class="lead">Filler text goes here</p>
+              </div>
+            </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </header>
+
+
+  <style>
+      .carousel-item {
+        height: 95vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    
+    .carousel-item a{
+        color: white;
+    }
+
+
+  </style>
+
+
+<script>
+    $(document).ready(function(){
+        $('.nav-link.missions').addClass('active');
+    })
+    
+</script>
+
+{% endblock %}

@@ -1,0 +1,84 @@
+{% load static %}
+
+<html>
+
+    <head>
+        <title>Church</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-custom sticky-top py-4">
+            <a href="{% url 'home_page' %}" class="navbar-brand mr-4">
+                <img src="{% static 'icf.png' %}" height="28" alt="CoolBrand">
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mr-auto">
+                    <a href="{% url 'ministries_page' %}" class="nav-item nav-link missions" style="color: black;">Ministries</a>
+                    <a href="{% url 'missions_page' %}" class="nav-item nav-link missions" style="color: black;">Missions</a>
+                    <a href="{% url 'media_page' %}" class="nav-item nav-link media" style="color: black;">Media</a>
+                    <a href="{% url 'about_page' %}" class="nav-item nav-link about" style="color: black;">About</a>
+                </div>
+
+                <div class="navbar-nav ml-auto">
+                </div>
+            </div>
+        </nav>
+
+          {% block content%}
+
+          {% endblock%}
+
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+
+    <style>
+        .row{
+            margin: auto;
+        }
+
+
+        .navbar-custom {
+            background-color:#ffffff
+        }
+
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: rgba(255,255,255,.8);
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: rgba(255,255,255,.5);
+        }
+
+        .navbar-custom .nav-item.active .nav-link,
+        .navbar-custom .nav-item:hover .nav-link {
+            color: #ffffff;
+        }
+
+
+        .nav-item{
+            font-size: 1vw;
+        }
+
+        a{
+            color: black;
+        }
+
+    </style>
+
+</html>

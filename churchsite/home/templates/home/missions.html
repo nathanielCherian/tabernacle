@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+<!--
+<div class="row justify-content-center">
+  <div class="col-10" style="text-align: center;">
+    <h1 style="margin-top: 5%; margin-bottom: 2.5%;">Our Missions...</h1>
+  </div>
+</div>-->
+
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators" style="margin-bottom: 10%;">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <div class="carousel-item active" style="background-image: url({% static 'tailoring1.JPG' %})">
+
+          <div class="carousel-caption d-md-block">
+            <h2 class="display-4"><a href="{% url 'tailoring_center' %}">Tailoring School</a></h2>
+            <p class="lead">Giving WINGS to Women to fly.</p>
+          </div>
+
+        </div>
+
+        <div class="carousel-item" style="background-image: url({% static 'disciple1.JPG' %})">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Discipleship Centre</a></h2>
+            <p class="lead">Students of  Discipleship Centre</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url({% static 'tuition.JPG' %})">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-4"><a href="{% url 'tuition_center' %}">Tuiton centres</a></h2>
+            <p class="lead">Tuiton centres in slum areas.</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  </header>
+
+
+  <style>
+      .carousel-item {
+        height: 95vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    
+    .carousel-item a{
+        color: white;
+    }
+
+
+  </style>
+
+<script>
+    $(document).ready(function(){
+        $('.nav-link.missions').addClass('active');
+    })
+    
+</script>
+
+{% endblock %}
