@@ -31,14 +31,14 @@
         </div>
 
         <div class="carousel-item" style="background-image: url({% static 'disciple1.JPG' %})">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Discipleship Centre</a></h2>
             <p class="lead">Students of  Discipleship Centre</p>
           </div>
         </div>
 
         <div class="carousel-item" style="background-image: url({% static 'tuition.JPG' %})">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h2 class="display-4"><a href="{% url 'tuition_center' %}">Tuiton centres</a></h2>
             <p class="lead">Tuiton centres in slum areas.</p>
           </div>
@@ -73,6 +73,10 @@
     
     .carousel-item a{
         color: white;
+    }
+
+    .carousel-inner h2{
+        margin-bottom: 25.5%;
     }
 
 

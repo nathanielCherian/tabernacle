@@ -3,23 +3,25 @@
 <html>
 
     <head>
-        <title>Church</title>
+        <title>Tabernacle</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+        <link rel="shortcut icon" href="{% static 'icf.png' %}" type="image/x-icon">
+
     </head>
 
     <body>
 
-        <nav class="navbar navbar-expand-md navbar-custom sticky-top py-4">
+        <nav class="navbar navbar-expand-md navbar-custom sticky-top py-4" style="color: black;">
             <a href="{% url 'home_page' %}" class="navbar-brand mr-4">
                 <img src="{% static 'icf.png' %}" height="28" alt="CoolBrand">
             </a>
 
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" style="color: black;">
+                <span class="navbar-toggler-icon" style="color: black;"></span>
             </button>
     
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -84,6 +86,51 @@
             font-weight: 600;
         }
 
+        body{
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; /* Firefox */
+        -webkit-animation: fadein 2s; /* Safari and Chrome */
+        -o-animation: fadein 2s; /* Opera */
+    }
+
+    @keyframes fadein {
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-moz-keyframes fadein { /* Firefox */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-webkit-keyframes fadein { /* Safari and Chrome */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity:1;
+            }
+        }
+        @-o-keyframes fadein { /* Opera */
+            from {
+                opacity:0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+        }   
     </style>
 
 </html>

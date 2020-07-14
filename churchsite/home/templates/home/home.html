@@ -32,22 +32,24 @@
 <div class="bigbody" style="height: 300vh; background-color: white;">
 
 
+
 <div class="announcements" style="margin-bottom: 5%;">
 
 
-<div class="row justify-content-center" style="margin-top: 5%; margin-bottom: 2%;">
+<div class="row justify-content-center" style="margin-top: 1%; margin-bottom: 0%;">
     
     <div class="col-10" style="text-align: center;">
-        <h2>Announcements</h2>
+        <h3 style="font-size: 3vw;">This week at Tabernacle</h3>
     </div>
 </div>
 
 
-<header style="margin-bottom: 3%;">
+<header style="margin-bottom: 0%;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators" style="margin-bottom: 10%;">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
 
       <div class="carousel-inner" role="listbox">
@@ -55,19 +57,25 @@
         <div class="carousel-item active" style="background-image: url({% static 'covid.png'%})">
 
           <div class="carousel-caption d-md-block">
-            <h2 class="display-4"><a href="{% url 'tailoring_center' %}">Tailoring School</a></h2>
+            <h2 class="display-4"><a href="{% url 'tailoring_center' %}">Worship Service Online</a></h2>
             <p class="lead">We are now Online due to COVID. Join us on Zoom... For More Information please contanct ipctabernaclebbsr@gmail.com, Ph: 9437281796</p>
           </div>
 
         </div>
 
-        <div class="carousel-item" style="background-image: url({% static 'disciple1.JPG' %})">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Covid-19</a></h2>
-            <p class="lead">Students of  Discipleship Centre</p>
+        <div class="carousel-item" style="background-image: url({% static 'prayer.jpg' %})">
+          <div class="carousel-caption  d-md-block">
+            <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Intercessory Prayer and Evening Devotion</a></h2>
+            <p class="lead">text goes here</p>
           </div>
         </div>
 
+        <div class="carousel-item" style="background-image: url({% static 'bible_study.png' %})">
+            <div class="carousel-caption  d-md-block">
+              <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Bible Class</a></h2>
+              <p class="lead">text goes here</p>
+            </div>
+          </div>
 
 
 
@@ -81,6 +89,7 @@
             <span class="sr-only">Next</span>
           </a>
     </div>
+
   </header>
 
 
@@ -136,13 +145,13 @@
     <div id="welcome" class="welcome" style="color: white;">
 
         <div class="row justify-content-center">
-            <h2 style="margin-top: 10%;">Welcome!</h2>
+            <h2 style="margin-top: 15%;">Welcome!</h2>
         </div>
 
         <div class="row justify-content-center">
 
             <div class="col-6">
-                <p style="margin-top: 2%; font-size: 1vw; text-align: center;">We exist as a church to love the Lord Jesus Christ and to extend His Love to others. Our goal is to
+                <p style="margin-top: 2%; font-size: 1.0vw; text-align: center;">We exist as a church to love the Lord Jesus Christ and to extend His Love to others. Our goal is to
                     glorify the name of the Lord. We are a multi-lingual spirit filled and Bible believing Church. We teach
                     the Word of God, worship passionately and are willing to go out to proclaim the gospel of Jesus
                     Christ.</p>
@@ -175,7 +184,9 @@
 
     </div>
 
+
     <hr style="margin-top: 5%; margin-bottom: 5%;">
+    <!--
 
 
     <div class="week" style="margin-bottom: 10%;">
@@ -218,7 +229,7 @@
 
         </div>
 
-    </div>
+    </div> -->
 
 
 
@@ -456,6 +467,12 @@
     .carousel-item a{
         color: white;
     }
+
+    .carousel-inner h2{
+        margin-bottom: 21.5%;
+    }
+
+
 
 
     </style>
