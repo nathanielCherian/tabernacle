@@ -24,7 +24,8 @@
     
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
-                    <a href="{% url 'ministries_page' %}" class="nav-item nav-link missions" style="color: black;">Ministries</a>
+                    <a href="{% url 'home_page' %}" class="nav-item nav-link home" style="color: black;">Home</a>
+                    <a href="{% url 'ministries_page' %}" class="nav-item nav-link ministries" style="color: black;">Ministries</a>
                     <a href="{% url 'missions_page' %}" class="nav-item nav-link missions" style="color: black;">Missions</a>
                     <a href="{% url 'media_page' %}" class="nav-item nav-link media" style="color: black;">Media</a>
                     <a href="{% url 'about_page' %}" class="nav-item nav-link about" style="color: black;">About</a>
@@ -77,6 +78,10 @@
 
         a{
             color: black;
+        }
+
+        .active{
+            font-weight: 600;
         }
 
     </style>
