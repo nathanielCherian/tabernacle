@@ -1,0 +1,118 @@
+html {
+    scroll-behavior: smooth;
+    }
+    
+
+
+    .row{
+        margin: auto;
+    }
+
+    h1{
+        font-size: 6vw;
+    }
+
+    h2{
+        font-size: 3.5vw;
+    }
+
+    h3{
+        font-size: 2.5vw;
+    }
+
+    .bigbtn{
+        width: 30%;
+        height: 100%;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        border-radius: 40px;
+        background: none;
+        color: white;
+        font-size: 1vw;
+        font-weight: 600;
+        border: 2px solid white;
+        outline: none;
+        transition-duration: 1s;
+    }
+
+    .bigbtn:hover{
+        background-color: white;
+        color: black;
+        outline: none;
+        
+    }
+
+    a{
+        color: black;
+    }
+
+    a:hover{
+        color: black;
+    }
+
+    li{
+        font-size: 1.5vw;
+    }
+
+    .carousel-item {
+    height: 80vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.carousel-item a{
+    color: white;
+}
+
+.carousel-inner h2{
+    margin-bottom: 30vh;
+}
+
+.title h1{
+    margin-top: 15%;
+}
+
+.announcements h3{
+        font-size: 3vw;
+}
+
+.welcome p{
+    font-size: 1.0vw;
+}
+
+.welcome .col-12{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#exist p{
+    font-size: 1vw;
+}
+
+#exist .col-12{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#mission .col-12{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+
+#mission p{
+    font-size: 1.5vw;
+}
+
+#visit h5{
+        font-size: 1vw;
+}
+
+#visit h6{
+    font-size: .75vw;
+}

@@ -3,27 +3,32 @@
 
 {% block content %}
 
+
+
 <div class="parallax">
 
+    <div class="title">
+
     <div class="row justify-content-center">
-        <h1 style="color: white; margin-top: 15%;">IPC Tabernacle Bhubaneswar</h1>
+        <h1 style="color: white;">IPC Tabernacle Bhubaneswar</h1>
     </div>
 
     <div class="row justify-content-center">
         <h3 style="color: white; margin-top: 5%;">Spreading God's Love</h3>
     </div>
 
-    <div class="row justify-content-center" style="margin-top: 8%;">
-        <div class="col-5" style="justify-content: center; display: flex; text-align: center;">
+    <div class="row justify-content-center " style="margin-top: 8%;">
+        <div class="col-5 btn-holder" style="justify-content: center; display: flex; text-align: center;">
             <a href="#welcome" class="bigbtn">Who Are We?</a>
         </div>
 
-        <div class="col-5" style="justify-content: center; display: flex; text-align: center;">
+        <div class="col-5 btn-holder" style="justify-content: center; display: flex; text-align: center;">
             <a href="#visit" class="bigbtn">Plan Your Visit</a>
         </div>
 
     </div>
 
+    </div>
 </div>
 
 <div class="parallax"></div>
@@ -39,7 +44,7 @@
 <div class="row justify-content-center" style="margin-top: 1%; margin-bottom: 0%;">
     
     <div class="col-10" style="text-align: center;">
-        <h3 style="font-size: 3vw;">This week at Tabernacle</h3>
+        <h3 style="">This week at Tabernacle</h3>
     </div>
 </div>
 
@@ -54,7 +59,7 @@
 
       <div class="carousel-inner" role="listbox">
 
-        <div class="carousel-item active" style="background-image: url({% static 'covid.png'%})">
+        <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url({% static 'online.jpg'%})">
 
           <div class="carousel-caption d-md-block">
             <h2 class="display-4"><a href="{% url 'tailoring_center' %}">Worship Service Online</a></h2>
@@ -63,14 +68,14 @@
 
         </div>
 
-        <div class="carousel-item" style="background-image: url({% static 'prayer.jpg' %})">
+        <div class="carousel-item" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'prayer.jpg' %})">
           <div class="carousel-caption  d-md-block">
             <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Intercessory Prayer and Evening Devotion</a></h2>
             <p class="lead">text goes here</p>
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url({% static 'bible_study.png' %})">
+        <div class="carousel-item" style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'bible_study.png' %})">
             <div class="carousel-caption  d-md-block">
               <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Bible Class</a></h2>
               <p class="lead">text goes here</p>
@@ -150,8 +155,8 @@
 
         <div class="row justify-content-center">
 
-            <div class="col-6">
-                <p style="margin-top: 2%; font-size: 1.0vw; text-align: center;">We exist as a church to love the Lord Jesus Christ and to extend His Love to others. Our goal is to
+            <div class="col-12">
+                <p style="margin-top: 2%;  text-align: center;">We exist as a church to love the Lord Jesus Christ and to extend His Love to others. Our goal is to
                     glorify the name of the Lord. We are a multi-lingual spirit filled and Bible believing Church. We teach
                     the Word of God, worship passionately and are willing to go out to proclaim the gospel of Jesus
                     Christ.</p>
@@ -174,8 +179,8 @@
 
         <div class="row justify-content-center">
 
-            <div class="col-6">
-                <p style="margin-top: 2%; font-size: 1vw; text-align: center;">We exist to reach the local and migrant population in capital city Bhubaneswar with the gospel of
+            <div class="col-12">
+                <p style="margin-top: 2%; text-align: center;">We exist to reach the local and migrant population in capital city Bhubaneswar with the gospel of
                     Jesus Christ and to make them His disciples through deep and sound Biblical teachings.</p>
             </div>
 
@@ -251,8 +256,8 @@
 
         <div class="row justify-content-center">
 
-            <div class="col-6" style="text-align: center; margin-top: 2.5%;">
-                <p style="font-size: 1.5vw;">We recognize that Mission is not an option, but rather the very lifeblood of the church activities. We
+            <div class="col-12" style="text-align: center; margin-top: 2.5%;">
+                <p style="">We recognize that Mission is not an option, but rather the very lifeblood of the church activities. We
                     focus and partner in coastal districts of Odisha. Our motto is “Win the winnable, when they are
                     winnable”.</p>
             </div>
@@ -296,38 +301,38 @@
                     
                     <div class="row" style="margin-top: 10%;">
                         <div class="col-12">
-                            <h5 style="font-size: 1vw;">Sunday Services at 10: 30 AM</h5>
+                            <h5 style="">Sunday Services at 10: 30 AM</h5>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                        <h6 style="font-size: .75vw; margin-left: .5vw;">Biju Pattnaik Energy Park Auditorium</h6>
+                        <h6 style="margin-left: .5vw;">Biju Pattnaik Energy Park Auditorium</h6>
                     </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                        <h6 style="font-size: .75vw; margin-left: .5vw;">Kholathia, near Khandagiri</h6>
+                        <h6 style="margin-left: .5vw;">Kholathia, near Khandagiri</h6>
                     </div>
                     </div>
 
 
                     <div class="row" style="margin-top: 6%;">
                         <div class="col-12">
-                            <h5 style="font-size: 1vw;">Pastor John Mathai</h5>
+                            <h5 style="">Pastor John Mathai</h5>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                        <h6 style="font-size: .75vw; margin-left: .5vw;">Phone: 9437281796</h6>
+                        <h6 style=" margin-left: .5vw;">Phone: 9437281796</h6>
                     </div>
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                        <h6 style="font-size: .75vw; margin-left: .5vw;">email: johnmathaiorissa@gmail.com</h6>
+                        <h6 style=" margin-left: .5vw;">email: johnmathaiorissa@gmail.com</h6>
                     </div>
                     </div>
 
@@ -354,128 +359,55 @@
 
     <style>
 
-        html {
-        scroll-behavior: smooth;
-        }
-        
-        .parallax {
-          /* The image used */
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'church.JPG'%}");
-        
-          /* Full height */
-          height: 50%; 
-        
-          /* Create the parallax scrolling effect */
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
- 
-        }
 
-
-        .events{
-        /* The image used */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'eve.jpg'%}");
-        
-        /* Full height */
-        height: 50%; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
-        }
-
-
-        .welcome{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'seekers1.JPG'%}");
-        
-        /* Full height */
-        height: 25%; 
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover; 
-        }
-
-        .row{
-            margin: auto;
-        }
-
-        h1{
-            font-size: 6vw;
-        }
-
-        h2{
-            font-size: 3.5vw;
-        }
-
-        h3{
-            font-size: 2.5vw;
-        }
-
-        .bigbtn{
-            width: 30%;
-            height: 100%;
-            padding-top: 2.5%;
-            padding-bottom: 2.5%;
-            border-radius: 40px;
-            background: none;
-            color: white;
-            font-size: 1vw;
-            font-weight: 600;
-            border: 2px solid white;
-            outline: none;
-            transition-duration: 1s;
-        }
-
-        .bigbtn:hover{
-            margin-top: -2vh;
-            background-color: white;
-            color: black;
-            outline: none;
-            
-        }
-
-        a{
-            color: black;
-        }
-
-        a:hover{
-            color: black;
-        }
-
-        li{
-            font-size: 1.5vw;
-        }
-
-        .carousel-item {
-        height: 80vh;
-        min-height: 350px;
-        background: no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
+.parallax {
+      /* The image used */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'church.JPG'%}");
     
-    .carousel-item a{
-        color: white;
+      /* Full height */
+      height: 50%; 
+    
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
     }
 
-    .carousel-inner h2{
-        margin-bottom: 30vh;
+
+    .events{
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'eve.jpg'%}");
+    
+    /* Full height */
+    height: 50%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
     }
 
 
-
+    .welcome{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{% static 'seekers1.JPG'%}");
+    
+    /* Full height */
+    height: 25%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
 
     </style>
+
+<link rel="stylesheet" href="{% static 'styles/home_reg.css' %}">
+<link rel="stylesheet" href="{% static 'styles/home_small.css' %}">
 
 <script>
     $(document).ready(function(){
