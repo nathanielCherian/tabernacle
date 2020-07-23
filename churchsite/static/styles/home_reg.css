@@ -116,3 +116,7 @@ html {
 #visit h6{
     font-size: .75vw;
 }
+
+#timecard{
+    height: 40vh;
+}
