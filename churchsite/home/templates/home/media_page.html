@@ -4,13 +4,26 @@
 
 {% block content %}
 
-<div class="row justify-content-center" style="margin-top: 10%;">
+
+<div class="row justify-content-center" style="margin-top: 3%;">
+    <h1>Media</h1>
+</div>
+
+<div class="row justify-content-center" style="margin-top: 2%;">
 
     <div class="col-10" style="text-align: center;">
-        <h1>Under Construction</h1>
+
+        <figure>
+            <img src="{% static 'openair.jpg'%}" style="width: 100%;">
+            <figcaption>Open Air interaction with the Youths</figcaption>
+        </figure>
+
     </div>
 
 </div>
+
+
+<div style="margin-top: 10%;"></div>
 
 
 <script>
@@ -20,5 +33,13 @@
     
 </script>
 
+
+<style>
+
+    figcaption{
+        font-size: 2vw;
+    }
+
+</style>
 
 {% endblock %}
