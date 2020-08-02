@@ -1,7 +1,23 @@
 from django.shortcuts import render
+from django.contrib import messages
+from .forms import PersonCreateForm
 
 def home_page(request):
-    return render(request, 'home/home.html')
+
+    if request.method == 'POST':
+        person_form = PersonCreateForm(request.POST or None)
+
+        if person_form.is_valid():
+            new_person = person_form.save()
+            messages.success(request, f'Sign up Succesful!')
+
+        else:
+            messages.warning(request, f'Sign up Failed, try again')
+
+    else:
+        person_form = PersonCreateForm()
+
+    return render(request, 'home/home.html', {'form':person_form})
 
 def media_page(request):
     return render(request, 'home/media_page.html')
