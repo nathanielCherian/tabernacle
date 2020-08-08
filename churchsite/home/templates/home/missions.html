@@ -21,7 +21,7 @@
 
       <div class="carousel-inner" role="listbox">
 
-        <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'WingsTailoringCenter.png' %})">
+        <div class="carousel-item active wings" style="">
 
           <div class="carousel-caption d-md-block">
             <h2 class="display-4"><a href="{% url 'tailoring_center' %}">Learn more</a></h2>
@@ -30,13 +30,13 @@
 
         </div>
 
-        <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'DiscipleshipCenterR1.png' %})">
+        <div class="carousel-item dis" style="">
           <div class="carousel-caption d-md-block">
             <h2 class="display-4"><a href="{% url 'discipleship_centre' %}">Learn more</a></h2>
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Tuition Center-compressed.png' %})">
+        <div class="carousel-item tut" style="">
           <div class="carousel-caption d-md-block">
             <h2 class="display-4"><a href="{% url 'tuition_center' %}">Learn more</a></h2>
             
@@ -78,6 +78,32 @@
       /*margin-bottom: 10vh;*/
     }
 
+    .wings{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'WINGS.png' %})
+    }
+
+    .dis{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'DiscipleshipCenter.png' %})
+    }
+
+    .tut{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'TuitionCenter.png' %})
+    }
+
+
+    @media only screen and (orientation: portrait) {
+      .wings{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Wings.2.png' %})
+      }
+
+      .dis{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Discipleship.2.png' %})
+      }
+
+      .tut{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Tution.2.png' %})
+      }
+    }
 
   </style>
 

@@ -23,64 +23,64 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
         
       </ol>
 
       <div class="carousel-inner" role="listbox">
 
-        <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'vbs1.JPG' %})">
+        <div class="carousel-item active vbs" style="">
             <div class="carousel-caption  d-md-block">
               <h2 class="display-4"><a href="{% url 'vbs' %}">Learn More</a></h2>
             </div>
           </div>
   
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'seekers2.JPG' %})">
+          <!--
+            <div class="carousel-item" style="background-image: linear-gradient(rgba(161, 112, 112, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'seekers2.JPG' %})">
               <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'seekers_meeting' %}">Learn More</a></h2>
               </div>
             </div>
-  
+            -->
     
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Literature-compressed.png' %})">
+            <div class="carousel-item literature" style="">
               <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'literature_ministry' %}">Learn More</a></h2>
               </div>
             </div>
   
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'SundaySchool.png' %})">
+            <div class="carousel-item sunday_school" style="">
                 <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'sunday_school' %}">Learn More</a></h2>
                   
               </div>
             </div>
   
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Youth-compressed.png' %})">
+            <div class="carousel-item youth" style="">
               <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'youth' %}">Learn More</a></h2>
               </div>
             </div>
   
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Evangleism.png' %})">
+            <div class="carousel-item evangalism" style="">
               <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'evangalism' %}">Learn More</a></h2>
               </div>
             </div>
   
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Family1.compressed.png' %}">
+            <div class="carousel-item family" style="">
                 <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'family_seminar' %}">Learn More</a></h2>
               </div>
             </div>
   
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://via.placeholder.com/150x150.png?text=picture+here)">
+            <div class="carousel-item relief_work" style="">
               <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'relief_work' %}">Learn More</a></h2>
                   
               </div>
             </div>
   
-            <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Christmas2.png' %})">
+            <div class="carousel-item christmas" style="">
               <div class="carousel-caption  d-md-block">
                   <h2 class="display-4"><a href="{% url 'christmas' %}">Learn More</a></h2>
                   
@@ -122,8 +122,88 @@
     }
 
 
+    .vbs{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'VBS.png' %})
+    }
+
+    .literature{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Literature.png' %})
+    }
+
+    .sunday_school{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'SundaySchool.png' %})
+    }
+
+    .sunday_school{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'SundaySchool.png' %})
+    }
+
+    .youth{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Youth.png' %})
+    }
+
+    .evangalism{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Evangleism.png' %})
+    }
+
+    .family{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Family.png' %})
+    }
+
+    .relief_work{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'ReliefWork.png' %})
+    }
+
+    .christmas{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'Christmas2.png' %})
+    }
+
+
+    
+    @media only screen and (orientation: portrait) {
+
+      .vbs{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.VBS.2.png' %})
+      }
+
+      .literature{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Literature.2.png' %})
+      }
+
+      .sunday_school{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.SundaySchool.2.png' %})
+      }
+
+      .sunday_school{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.SundaySchool.2.png' %})
+      }
+
+      .youth{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Youth.2.png' %})
+      }
+
+      .evangalism{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Evangelism.2.png' %})
+      }
+
+      .family{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Family2.png' %})
+      }
+
+      .relief_work{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Relief.2.png' %})
+      }
+
+      .christmas{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({% static 'mobile/Mob.Christmas.2.png' %})
+      }
+
+    }
+
   </style>
 
+
+<link rel="stylesheet" href="{% static 'styles/ministries_small.css' %}">
 
 <script>
     $(document).ready(function(){
