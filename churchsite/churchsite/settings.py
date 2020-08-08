@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.forms',
+    'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
@@ -121,3 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+GOOGLE_RECAPTCHA_SECRET_KEY = '6Lc8TbkZAAAAABtivI3X4l1lEUUnZDTiYfVPj35V'
