@@ -25,6 +25,11 @@ def media_page(request):
 def about_page(request):
     return render(request, 'home/about.html')
 
+def our_story(request):
+    return render(request, 'home/our_story.html')
+
+def events(request):
+    return render(request, 'home/events.html')
 
 
 def missions_page(request):
