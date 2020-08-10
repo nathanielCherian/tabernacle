@@ -4,4 +4,24 @@
         font-size: 3vw;
     }
 
+
+    .fa {
+        padding: 5vw;
+        font-size: 6vw;
+        width: 5vw;
+        height: 5vw;
+        text-align: center;
+        border-radius: 50%;
+        background-color: rgb(214, 211, 211);
+        margin: 2vw;
+        color: white;
+        transition-duration: 1s;
+        text-decoration: none;
+    }
+    
+    .fa:hover{
+        margin-top: -1vh;
+        color: black;
+        text-decoration: none;
+    }
 }
