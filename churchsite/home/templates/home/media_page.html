@@ -7,7 +7,7 @@
 
 <div class="row justify-content-center" style="height: 100%; margin-top: 2%;">
 
-    <div class="col-8" style="height: 100%;">
+    <div class="col-8 bx" style="">
 
         <div class="media-box" style="height: 40%; background: none; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({% static 'preacher1a.png' %}); background-repeat: no-repeat; background-size:100%;">
 
@@ -70,7 +70,17 @@
         color: white;
     }
 
+    .bx{
+        height: 100%;
+    }
 
+    @media only screen and (orientation: portrait) {
+
+        .bx{
+            height: 40%;
+        }
+
+    }
 
 </style>
 
