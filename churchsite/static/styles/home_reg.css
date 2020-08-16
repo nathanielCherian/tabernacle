@@ -22,11 +22,14 @@ html {
 
     .bigbtn{
         background: none;
-        color: white;
-        font-size: 2vw;
         font-weight: 600;
         outline: none;
         transition-duration: 1s;
+        color: white; 
+        font-size: 2vw; 
+        border: 3px solid white; 
+        padding: 2%; 
+        border-radius: 30px;
     }
 
     .bigbtn:hover{
@@ -112,4 +115,8 @@ html {
 
 #timecard{
     height: 40vh;
+}
+
+.info-visit{
+    padding-bottom: 5%;
 }
