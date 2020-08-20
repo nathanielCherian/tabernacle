@@ -42,6 +42,9 @@
         font-size: 8vw;
     }
 
+    .lead{
+        font-size: 5vw;
+    }
 
     .welcome h2{
         font-size: 15vw;
@@ -93,23 +96,23 @@
     }
 
     #visit h5{
-        font-size: 1.5vw;
+        font-size: 3vw;
     }       
 
     #visit p{
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     #timecard{
-        height: 40vh;
+        height: 30vh;
+    }
+
+    #timecard p{
+        font-size: 2.25vw;
     }
 
     .info-visit{
         padding-bottom: 1%;
-    }
-
-    .connected-mobile{
-        margin-top: -20%;
     }
 
 }
